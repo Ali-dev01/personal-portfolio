@@ -1,0 +1,24 @@
+.custom-swiper-wrapper > .swiper-wrapper {
+  margin-bottom: 50px;
+}
+.custom-swiper-wrapper > .swiper-pagination {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.custom-swiper-wrapper > .swiper-pagination > .swiper-pagination-bullet {
+  background: transparent;
+  width: 10px;
+  height: 10px;
+  outline: 2px solid #ff9100;
+  outline-offset: 2px;
+  opacity: 1;
+}
+.custom-swiper-wrapper > .swiper-pagination > .swiper-pagination-bullet-active {
+  outline: 2px solid #ff9100;
+  outline-offset: 2px;
+  width: 10px;
+  height: 10px;
+  background: #ff9100;
+}

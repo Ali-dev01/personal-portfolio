@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
 import SideNav from "@/layout/side-nav";
-import "./globals.css";
 import Header from "@/layout/header";
+import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -23,10 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={jakarta.className}>
-        <div className="flex min-h-screen">
-          <div className="w-20">
+        <div className="flex">
+          <aside className="sm:w-20 w-0">
             <SideNav />
-          </div>
+          </aside>
           <div className="flex-1">
             <Header />
             {children}
