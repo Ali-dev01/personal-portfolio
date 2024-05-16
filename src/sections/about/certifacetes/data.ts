@@ -1,8 +1,10 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+
 export interface DATATYPE {
-  title: String;
-  img: String;
-  from: String;
-  platform: String;
+  title: string;
+  img: string | StaticImport;
+  from: string;
+  platform: string;
 }
 
 export const data: DATATYPE[] = [
