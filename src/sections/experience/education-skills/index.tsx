@@ -27,7 +27,7 @@ const cardVariants = {
 
 const iconVariants = {
   initial: {
-    y: 70,
+    y: 100,
     opacity: 0,
     transition: {
       duration: 1.3,
@@ -46,7 +46,8 @@ const iconVariants = {
 const EducationSkills = () => {
   const ref: any = useRef(null);
   const iconRef: any = useRef(null);
-  const inView = useInView(ref, { margin: "50px" });
+  const inView = useInView(ref, { margin: "100px" });
+  const iconView = useInView(iconRef, { margin: "50px" });
 
   return (
     <div className="mt-16">
@@ -74,7 +75,7 @@ const EducationSkills = () => {
             variants={iconVariants}
             ref={iconRef}
             initial="initial"
-            animate={inView ? "animate" : "initial"}
+            animate={iconView ? "animate" : "initial"}
             className="flex gap-6 flex-wrap"
           >
             {skills.map((item) => (

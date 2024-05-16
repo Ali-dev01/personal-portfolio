@@ -39,7 +39,7 @@ const HomeSection = (): JSX.Element => {
         variants={imgVariant}
         initial="initial"
         animate="animate"
-        className="absolute bg-home-bg hidden sm:block brightness-50 xl:brightness-100 bg-right-top object-contain bg-no-repeat w-full h-full"
+        className="absolute bg-home-bg brightness-[15%] xl:brightness-100 bg-top xl:bg-right-top bg-no-repeat w-full h-full bg-contain lg:bg-auto"
       />
       <motion.div
         variants={textVariant}
