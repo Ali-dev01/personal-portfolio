@@ -27,7 +27,7 @@ export default function RootLayout({
           <aside className="sm:w-20 w-0">
             <SideNav />
           </aside>
-          <div className="flex-1">
+          <div id="home" className="flex-1">
             <Header />
             {children}
           </div>

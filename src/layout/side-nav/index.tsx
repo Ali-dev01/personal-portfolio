@@ -1,12 +1,14 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
+import { RxCross1 } from "react-icons/rx";
 import { HiOutlineMenu } from "react-icons/hi";
 import { NAVITEMS, navData } from "./nav-data";
-import { RxCross1 } from "react-icons/rx";
 
 const SideNav = () => {
   const [showSidenav, setShowSidenav] = useState(false);
+  const [activeNav, setActiveNav] = useState("home");
 
   const handleNav = (): void => {
     setShowSidenav(!showSidenav);
@@ -23,16 +25,24 @@ const SideNav = () => {
         </div>
         <div className="mt-12">
           <ul>
-            {navData.map((item: NAVITEMS, i: number) => (
-              <li
-                className={`py-6 flex justify-center text-3xl cursor-pointer ${
-                  i === 0 ? "" : "border-t border-gray-800"
-                }`}
-                key={i}
-              >
-                {item.icon}
-              </li>
-            ))}
+            {navData.map((item: NAVITEMS, i: number) => {
+              const IconComponent = item.icon.type;
+              return (
+                <li
+                  key={i}
+                  onClick={() => setActiveNav(item.title)}
+                  className={`py-6 flex justify-center text-3xl cursor-pointer ${
+                    i === 0 ? "" : "border-t border-gray-800"
+                  }`}
+                >
+                  <Link href={item.link}>
+                    <IconComponent
+                      className={`${item.title === activeNav ? "text-primary-main" : "text-white"}`}
+                    />
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

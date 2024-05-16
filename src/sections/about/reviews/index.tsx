@@ -1,4 +1,6 @@
 "use client";
+import { useRef } from "react";
+import { useInView, motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -13,17 +15,41 @@ import ReviewCard from "@/components/review-card";
 import useScreenSize from "@/hooks/use-screen-size";
 import "./styles.css";
 
+const cardVariants = {
+  initial: {
+    y: 100,
+    opacity: 0,
+    transition: {
+      duration: 1.5,
+    },
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 const Reviews = () => {
   const { currentScreenSize: size } = useScreenSize();
-
-  console.log(size);
+  const ref: any = useRef(null);
+  const inView = useInView(ref, { margin: "50px" });
 
   return (
     <>
       <div className="mt-28">
         <CustomHeading title="Testimonilas" />
       </div>
-      <div className="mt-16 w-full">
+      <motion.div
+        variants={cardVariants}
+        ref={ref}
+        initial="initial"
+        animate={inView ? "animate" : "initial"}
+        className="mt-16 w-full"
+      >
         <Swiper
           slidesPerView={size === "xl" || size === "lg" ? 2 : 1}
           spaceBetween={30}
@@ -44,7 +70,7 @@ const Reviews = () => {
             <ReviewCard />
           </SwiperSlide>
         </Swiper>
-      </div>
+      </motion.div>
     </>
   );
 };

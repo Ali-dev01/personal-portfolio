@@ -4,28 +4,34 @@ import { MdWork } from "react-icons/md";
 
 export interface NAVITEMS {
   title: string;
+  link: string;
   icon: JSX.Element;
 }
 
 export const navData: NAVITEMS[] = [
   {
     title: "home",
+    link: "/#home",
     icon: <IoHome />,
   },
   {
-    title: "about",
+    title: "bio",
+    link: "/#bio",
     icon: <FiUser />,
   },
   {
     title: "resume",
+    link: "/#resume",
     icon: <IoDocumentTextOutline />,
   },
   {
-    title: "work",
+    title: "portfolio",
+    link: "/#portfolio",
     icon: <MdWork />,
   },
   {
     title: "contact",
+    link: "/#contact",
     icon: <FiPhoneOutgoing />,
   },
 ];
