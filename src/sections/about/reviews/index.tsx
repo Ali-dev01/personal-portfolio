@@ -58,7 +58,7 @@ const Reviews = () => {
             clickable: true,
           }}
           modules={[Pagination]}
-          className="w-[84.2vw] m-auto custom-swiper-wrapper"
+          className="w-[83vw] m-auto custom-swiper-wrapper"
         >
           <SwiperSlide>
             <ReviewCard />
