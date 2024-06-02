@@ -10,6 +10,13 @@ const SideNav = () => {
   const [showSidenav, setShowSidenav] = useState(false);
   const [activeNav, setActiveNav] = useState("home");
 
+  const handleActiveNav = (title: string) => {
+    setActiveNav(title);
+    setTimeout(() => {
+      setShowSidenav(false);
+    }, 500);
+  };
+
   const handleNav = (): void => {
     setShowSidenav(!showSidenav);
   };
@@ -30,7 +37,7 @@ const SideNav = () => {
               return (
                 <li
                   key={i}
-                  onClick={() => setActiveNav(item.title)}
+                  onClick={() => handleActiveNav(item.title)}
                   className={`py-6 flex justify-center text-3xl cursor-pointer ${
                     i === 0 ? "" : "border-t border-gray-800"
                   }`}
@@ -47,7 +54,7 @@ const SideNav = () => {
         </div>
       </div>
       <div
-        className="fixed bottom-5 right-3 bg-primary-main z-20 p-4 rounded-full cursor-pointer text-white text-xl block sm:hidden"
+        className="fixed top-4 right-3 bg-primary-main z-20 p-3 rounded-full cursor-pointer text-white text-xl block sm:hidden"
         onClick={handleNav}
       >
         {showSidenav ? <RxCross1 /> : <HiOutlineMenu />}

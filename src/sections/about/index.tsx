@@ -5,11 +5,11 @@ import Reviews from "./reviews";
 
 const Biography = (): JSX.Element => {
   return (
-    <div className="bg-grey-light px-3 md:px-6 lg:px-16 pt-20 pb-20">
+    <div className="bg-grey-light pt-20 pb-20">
       <Bio />
       <MyServices />
       <Certificates />
-      <Reviews />
+      {/* <Reviews /> */}
     </div>
   );
 };

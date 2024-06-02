@@ -40,7 +40,7 @@ const Bio = () => {
         ref={ref}
         initial="initial"
         animate={inView ? "animate" : "initial"}
-        className="grid grid-cols-12 gap-8"
+        className="grid grid-cols-12 gap-8 px-3 md:px-6 lg:px-16"
       >
         <motion.div className="col-span-12 lg:col-span-5 flex flex-col items-center">
           <div className="relative">

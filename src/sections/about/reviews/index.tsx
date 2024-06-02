@@ -39,7 +39,7 @@ const Reviews = () => {
   const inView = useInView(ref, { margin: "50px" });
 
   return (
-    <>
+    <div className="px-3 md:px-6 lg:px-16">
       <div className="mt-28">
         <CustomHeading title="Testimonilas" />
       </div>
@@ -48,7 +48,7 @@ const Reviews = () => {
         ref={ref}
         initial="initial"
         animate={inView ? "animate" : "initial"}
-        className="mt-16 w-full"
+        className="mt-16"
       >
         <Swiper
           slidesPerView={size === "xl" || size === "lg" ? 2 : 1}
@@ -58,7 +58,7 @@ const Reviews = () => {
             clickable: true,
           }}
           modules={[Pagination]}
-          className="w-[83vw] m-auto custom-swiper-wrapper"
+          className="w-[86vw] md:w-[83vw] m-auto custom-swiper-wrapper"
         >
           <SwiperSlide>
             <ReviewCard />
@@ -71,7 +71,7 @@ const Reviews = () => {
           </SwiperSlide>
         </Swiper>
       </motion.div>
-    </>
+    </div>
   );
 };
 export default Reviews;

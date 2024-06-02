@@ -29,7 +29,7 @@ const Certificates = () => {
   const inView = useInView(ref, { margin: "50px" });
 
   return (
-    <>
+    <div className="px-3 md:px-6 lg:px-16">
       <div className="mt-28">
         <CustomHeading title="Certificates" />
       </div>
@@ -58,7 +58,7 @@ const Certificates = () => {
         className="mt-20 py-2 invert bg-repeat-x"
         style={{ backgroundImage: "url(/images/border-dark.png)", backgroundSize: "auto 6px" }}
       />
-    </>
+    </div>
   );
 };
 export default Certificates;
