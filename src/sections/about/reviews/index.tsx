@@ -14,6 +14,7 @@ import CustomHeading from "@/components/custom-heading";
 import ReviewCard from "@/components/review-card";
 import useScreenSize from "@/hooks/use-screen-size";
 import "./styles.css";
+import { reviewData } from "./data";
 
 const cardVariants = {
   initial: {
@@ -39,7 +40,7 @@ const Reviews = () => {
   const inView = useInView(ref, { margin: "50px" });
 
   return (
-    <div className="px-3 md:px-6 lg:px-16">
+    <>
       <div className="mt-28">
         <CustomHeading title="Testimonilas" />
       </div>
@@ -60,18 +61,14 @@ const Reviews = () => {
           modules={[Pagination]}
           className="w-[86vw] md:w-[83vw] m-auto custom-swiper-wrapper"
         >
-          <SwiperSlide>
-            <ReviewCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ReviewCard />
-          </SwiperSlide>
+          {reviewData.map((review) => (
+            <SwiperSlide key={review.name}>
+              <ReviewCard {...review} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </motion.div>
-    </div>
+    </>
   );
 };
 export default Reviews;

@@ -4,6 +4,7 @@ import { useInView, motion } from "framer-motion";
 
 import CustomHeading from "@/components/custom-heading";
 import ExperienceCard from "@/components/experience-card";
+import { experienceData } from "./data";
 
 const cardVariants = {
   initial: {
@@ -37,13 +38,17 @@ const MyExperience = () => {
         animate={inView ? "animate" : "initial"}
         className="mt-14"
       >
-        <ExperienceCard />
-        <motion.div variants={cardVariants} className="mt-8">
-          <ExperienceCard />
-        </motion.div>
-        <motion.div variants={cardVariants} className="mt-8">
-          <ExperienceCard />
-        </motion.div>
+        {experienceData.map((experience, i) =>
+          i === 0 ? (
+            <div key={i}>
+              <ExperienceCard {...experience} />
+            </div>
+          ) : (
+            <motion.div key={i} variants={cardVariants} className="mt-8">
+              <ExperienceCard {...experience} />
+            </motion.div>
+          )
+        )}
       </motion.div>
       <div
         className="mt-20 py-2 invert bg-repeat-x"

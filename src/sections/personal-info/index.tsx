@@ -74,9 +74,11 @@ const HomeSection = (): JSX.Element => {
           development.
         </p>
         <div className="inline">
-          <button className="mt-5 mb-20 bg-primary-main px-7 py-2 rounded-md text-white font-bold border border-transparent transition-all duration-300 hover:bg-transparent hover:text-primary-main hover:border-primary-main">
-            Download CV
-          </button>
+          <a href="/ali-hassan-SE.pdf" download>
+            <button className="mt-5 mb-20 bg-primary-main px-7 py-2 rounded-md text-white font-bold border border-transparent transition-all duration-300 hover:bg-transparent hover:text-primary-main hover:border-primary-main">
+              Download CV
+            </button>
+          </a>
         </div>
       </motion.div>
     </div>

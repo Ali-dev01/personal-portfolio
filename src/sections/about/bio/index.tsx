@@ -40,7 +40,7 @@ const Bio = () => {
         ref={ref}
         initial="initial"
         animate={inView ? "animate" : "initial"}
-        className="grid grid-cols-12 gap-8 px-3 md:px-6 lg:px-16"
+        className="grid grid-cols-12 gap-8"
       >
         <motion.div className="col-span-12 lg:col-span-5 flex flex-col items-center">
           <div className="relative">
@@ -76,13 +76,12 @@ const Bio = () => {
         <div className="col-span-12 lg:col-span-7">
           <CustomHeading title="Biography" />
           <p className="mt-16 text-gray-300">
-            I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San
-            Francisco. I code and create web elements for amazing people around the world. I like
-            work with new people. New people new Experiences.
-            <br />
-            <br /> I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from
-            San Francisco. I code and create web elements for amazing people around the world. I
-            like work with new people. New people new Experiences.
+            As a passionate and dedicated MERN stack developer, I bring 2+ years of hands-on
+            experience in building dynamic and responsive web applications using React.js, Next.js
+            and TypeScript. <br />
+            <br /> Further i have expanded my expertise to the backend, diving deep into MERN stack,
+            enabling me to build efficient server-side solutions. I thrive in collaborative
+            settings, constantly seeking to innovate and deliver impactful solutions.
           </p>
           <div className="mt-10 flex flex-wrap gap-5 sm:gap-20 md:gap-30">
             <ul>
