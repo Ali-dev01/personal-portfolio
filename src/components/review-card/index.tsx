@@ -15,12 +15,12 @@ const ReviewCard = (props: Props) => {
   const { currentScreenSize: size } = useScreenSize();
 
   return (
-    <div className="bg-black min-h-[190px] rounded-xl p-4 md:p-6 flex items-start gap-6">
+    <div className="bg-black min-h-[190px] rounded-xl p-4 md:p-6 flex flex-col md:flex-row items-start gap-3  md:gap-6">
       <Image
         src={img}
         alt="review"
-        width={size === "sm" ? 55 : 90}
-        height={size === "sm" ? 55 : 90}
+        width={size === "sm" ? 55 : 80}
+        height={size === "sm" ? 55 : 80}
         className="rounded-full"
       />
 

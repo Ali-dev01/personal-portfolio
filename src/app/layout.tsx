@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={jakarta.className}>
         <div className="flex">
-          <aside className="sm:w-20 w-0">
+          <aside className="md:w-20 w-0">
             <SideNav />
           </aside>
           <div id="home" className="flex-1">
