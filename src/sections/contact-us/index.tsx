@@ -65,13 +65,13 @@ const Contact = (): JSX.Element => {
           </div>
           <div className="mt-5 flex gap-3">
             <Link
-              href="#"
+              href="https://www.facebook.com/profile.php?id=100014061638759&mibextid=ZbWKwL"
               className="bg-[#262626] p-3 rounded-full transition-all duration-200 hover:bg-primary-main"
             >
               <FaFacebookF className="text-white" />
             </Link>
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/ali-hassan-3756041a3/"
               className="bg-[#262626] p-3 rounded-full transition-all duration-200 hover:bg-primary-main"
             >
               <FaLinkedinIn className="text-white" />
@@ -83,7 +83,7 @@ const Contact = (): JSX.Element => {
               <FaInstagram className="text-white" />
             </Link>
             <Link
-              href="#"
+              href="https://github.com/Ali-dev01"
               className="bg-[#262626] p-3 rounded-full transition-all duration-200 hover:bg-primary-main"
             >
               <FaGithub className="text-white" />

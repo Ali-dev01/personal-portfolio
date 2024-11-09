@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 import SideNav from "@/layout/side-nav";
 import Header from "@/layout/header";
 import "./globals.css";
 
-const jakarta = Plus_Jakarta_Sans({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", '600', "700"],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jakarta.className}>
+      <body className={poppins.className}>
         <div className="flex">
           <aside className="md:w-20 w-0">
             <SideNav />

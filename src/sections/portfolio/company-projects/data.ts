@@ -15,6 +15,21 @@ export const data: DATA_TYPE[] = [
     tags: ["React", "Next", "Redux", "TypeScript", "Ant Design", "Tailwind", "Node"],
   },
   {
+    img: "/images/portfolio/share-my-dine.png",
+    title: "Share My Dine",
+    url: "https://www.sharemydine.co.uk/",
+    desc: "Share My Dine is a platform for food lovers to create menus and listings for hosting dining experiences.",
+    tags: [
+      "React js",
+      "Next js",
+      "Node js",
+      "TypeScript",
+      "Ant Design",
+      "Sass",
+      "Swiper",
+    ],
+  },
+  {
     img: "/images/portfolio/identity-gram.png",
     title: "Identity Gram",
     url: "https://identitygram.co.uk/",
@@ -34,13 +49,6 @@ export const data: DATA_TYPE[] = [
     url: "https://carelibrary.co.uk/",
     desc: "Care Library is a staffing firm that specialises in putting together a high quality, well trained and compassionate healthcare workforce.",
     tags: ["Angular", "Redux", "TypeScript", "SCSS", "Angular Material"],
-  },
-  {
-    img: "/images/portfolio/nexa.png",
-    title: "Nexa Packaging",
-    url: "https://nexa-packaging.vercel.app/",
-    desc: "One for all solution, for custom printed packaging. Design your own box and turn your imagination into reality with full customization.",
-    tags: ["React js", "Next js", "TypeScript", "Material UI", "Swiper", "CMS"],
   },
   {
     img: "/images/portfolio/donation.png",

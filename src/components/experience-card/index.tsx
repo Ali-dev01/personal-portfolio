@@ -20,7 +20,7 @@ const ExperienceCard = (props: Props) => {
           </button>
         </div>
         <div className="w-full md:w-[80%]">
-          <p className="text-gray-400 text-sm">{desc}</p>
+          <p className="text-gray-400 text-md">{desc}</p>
         </div>
       </div>
     </div>
