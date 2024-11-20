@@ -8,6 +8,20 @@ export interface DATA_TYPE {
 
 export const data: DATA_TYPE[] = [
   {
+    img: "/images/portfolio/personnel-library.png",
+    title: "HR Management System",
+    url: "https://www.personnellibrary.co.uk/",
+    desc: "Personnel Library, a comprehensive HR solution. This all-in-one platform integrates recruitment, onboarding, HR management, performance management,",
+    tags: [
+      "Next js",
+      "RTK Query",
+      "TypeScript",
+      "Material UI",
+      "Nest js",
+      "Microservices",
+    ],
+  },
+  {
     img: "/images/portfolio/student-help.png",
     title: "Students Help Squad",
     url: "https://studenthelpsquad.co.uk/",
@@ -49,12 +63,5 @@ export const data: DATA_TYPE[] = [
     url: "https://carelibrary.co.uk/",
     desc: "Care Library is a staffing firm that specialises in putting together a high quality, well trained and compassionate healthcare workforce.",
     tags: ["Angular", "Redux", "TypeScript", "SCSS", "Angular Material"],
-  },
-  {
-    img: "/images/portfolio/donation.png",
-    title: "Family of Heart",
-    url: "https://familyoftheheartproject.com/",
-    desc: "Family Of The Heart Project is a non-profit organization that works to protect vulnerable children and single mothers in Kenya by empowering them with resources and opportunities to build a self-sufficient future.",
-    tags: ["HTML", "CSS", "Bootstrap", "jQuery", "Wordpress", "CMS"],
   },
 ];
