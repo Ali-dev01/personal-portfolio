@@ -67,14 +67,17 @@ const HomeSection = (): JSX.Element => {
           />
         </div>
         <p className="mt-5 text-sm sm:text-lg w-full md:w-3/4 lg:w-1/2 text-gray-300">
-          Experienced Software Engineer with a strong focus on React/Next js, Node js, and
-          Typescript, creating cutting-edge Web Applications, dynamic data visualization tools and
-          custom components. Adept at implementing best practices and delivering scalable,
-          high-performance solutions, I continuously strive to push the boundaries of modern web
-          development.
+          Experienced Software Developer with 3 years of experience in building modern,
+          high-performance web applications, using React, Next js, Node and TypeScript.
+          Skilled in creating intuitive and responsive user interfaces, integrating
+          third-party APIs, and developing feature-rich web solutions. Additionally
+          experienced in backend development using Node.js, Express.js, and MongoDB,
+          contributing to end-to-end application delivery. Frontend-focused developer
+          actively expanding into full stack development to deliver more complete
+          solutions.
         </p>
         <div className="inline">
-          <a href="/ali-hassan-SE.pdf" download>
+          <a href="/Ali-hassan-SE.pdf" download>
             <button className="mt-5 mb-20 bg-primary-main px-7 py-2 rounded-md text-white font-bold border border-transparent transition-all duration-300 hover:bg-transparent hover:text-primary-main hover:border-primary-main">
               Download CV
             </button>

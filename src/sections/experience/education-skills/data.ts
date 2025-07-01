@@ -2,7 +2,7 @@ export const data = [
   {
     title: "BS Computer Science",
     institute: "GC University Faisalabad",
-    time: "2017-2021",
+    time: "2016-2020",
   },
   {
     title: "ICS",

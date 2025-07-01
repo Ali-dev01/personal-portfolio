@@ -64,7 +64,7 @@ const Bio = () => {
                 }}
                 className={`absolute`}
               >
-                <SocialIcon>{item.icon}</SocialIcon>
+                <SocialIcon link={item.link}>{item.icon}</SocialIcon>
               </div>
             ))}
           </div>
@@ -76,7 +76,7 @@ const Bio = () => {
         <div className="col-span-12 lg:col-span-7">
           <CustomHeading title="Biography" />
           <p className="mt-16 text-gray-300">
-            As a passionate and dedicated MERN stack developer, I bring 2+ years of hands-on
+            As a passionate and dedicated MERN stack developer, I bring 3 years of hands-on
             experience in building dynamic and responsive web applications using React.js, Next.js
             and TypeScript. <br />
             <br /> Further i have expanded my expertise to the backend, diving deep into MERN stack,
